@@ -1,0 +1,30 @@
+{
+  "name": "bhrand",
+  "version": "0.0.0",
+  "description": "Pick a random element from a list accroding to the latest BTC hash",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weakish/bhrand"
+  },
+  "keywords": [
+    "random",
+    "pick",
+    "list",
+    "hash",
+    "bitcoin"
+  ],
+  "author": "Jakukyo Friel <weakish@gmail.com> (http://weakish.github.io)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/weakish/bhrand/issues"
+  },
+  "homepage": "https://github.com/weakish/bhrand",
+  "dependencies": {
+    "coffee": "0.0.1",
+    "request": "~2.34.0"
+  }
+}
