@@ -1,8 +1,8 @@
-request = require 'request'
+shelljs = require 'shelljs'
 
-module.exports = (list, callback) ->
+module.exports = (list) ->
   latesthash = 'http://blockchain.info/q/latesthash'
-  request(latesthash, (error, response, body) ->
-    if not error and response.statusCode is 200
-      lucky_one = parseInt(body, 16) % list.length
-      callback(list[lucky_one]))
+  latesthash = shelljs.exec("curl -s #{latesthash}", {silent: true}).output
+  random_number = parseInt(latesthash, 16)
+  selected_index = random_number % list.length
+  list[selected_index]

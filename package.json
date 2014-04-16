@@ -25,6 +25,6 @@
   "homepage": "https://github.com/weakish/bhrand",
   "dependencies": {
     "coffee": "0.0.1",
-    "request": "~2.34.0"
+    "shelljs": "~0.2.6"
   }
 }
